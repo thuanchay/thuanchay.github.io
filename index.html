@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Scroll</title>
+  <style type="text/css">
+  @import url("css/style.css");
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="info.html">
+	<link href="info2.html">
+	<link href="info3.html">
+	<link href="menu.html">
+	<link href="menu1.html">
+	<link href="menu2.html">
+	<link href="news.html">
+	<link href="news1.html">
+	<link href="news2.html">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+$(document).ready(function (){
+  $(".b1").click(function (){
+    $(".p1").toggle ();
+  });
+});
+</script>
+	
+	<script>
+$(document).ready(function (){
+  $(".b2").click(function (){
+    $(".p2").toggle ();
+  });
+});
+</script>
+	
+	<script>
+$(document).ready(function (){
+  $(".b3").click(function (){
+    $(".p3").toggle ();
+  });
+});
+</script>
+	
+	<script>
+$(document).ready(function (){
+  $(".b4").click(function (){
+    $(".p4").toggle ();
+  });
+});
+</script>
+	
+	<script>
+$(document).ready(function (){
+  $(".b5").click(function (){
+    $(".p5").toggle ();
+  });
+});
+</script>
+	
+	<script>
+$(document).ready(function (){
+  $(".b6").click(function (){
+    $(".p6").toggle ();
+  });
+});
+</script>
+	
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <nav class="navbar">
+      <ul>
+          <li><a href="#home"><i class="material-icons">trip_origin</i></a></li>
+		  <li><a href="#info"><i class="material-icons">trip_origin</i></a></li>
+		  <li><a href="#news"><i class="material-icons">trip_origin</i></a></li>
+          <li><a href="#menu"><i class="material-icons">trip_origin</i></a></li>
+          <li><a href="#place"><i class="material-icons">trip_origin</i></a></li>
+          <li><a href="#contact"><i class="material-icons">trip_origin</i></a></li>
+        </ul>
+      </nav>
+  <section id="home">
+
+	  <img src="img/LOGO WHITE-01.png">
+	  
+  </section>
+  <section id="info">
+
+	<a href="info.html" class="i1" ><button class="btn success">
+		<img src="img/salad.png">
+		An chay la gi</button></a>
+	<a href="info2.html" class="i2" ><button class="btn info">
+		<img src="img/help.png">
+		Tai sao an chay</button></a>
+	<a href="info3.html" class="i3" ><button class="btn warning">
+		<img src="img/kitchen.png">
+		An chay the nao</button></a>
+	  
+	  
+  </section>	
+  <section id="news">
+	  
+	  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="news.html">Tin tuc 1</a>
+  <a href="news1.html">Tin tuc 2</a>
+  <a href="news2.html">Tin tuc 3</a>
+</div>
+	  <span onclick="openNav()"><p class="more">Xem them</p></span>
+	  
+	  <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+	  <div class="contentnewsleft">
+	  	 
+		 <img src="img/news0.png">
+		  
+	  </div>
+	  
+	  <div class="contentnewsright">
+	  
+	  	<h1>Cuu Trai Dat</h1>
+		<br><p>Theo các nhà nghiên cứu tại Đại học Oxford, việc từ bỏ các thực phẩm động vật sẽ làm giảm 73% lượng khí thải carbon tính trên mỗi đầu người.</p>
+	  
+	  </div>
+	  
+  </section>
+  <section id="menu">
+
+		<a href="menu.html" class="m1"><button class="btn1">
+		<img class="mp1" src="img/cháo.png">
+		chao thap cam chay</button></a>
+	<a href="menu1.html" class="m2"><button class="btn2">
+		<img class="mp1" src="img/canh.png">
+		canh bi do chay</button></a>
+	<a href="menu2.html" class="m3"><button class="btn3">
+		<img class="mp1" src="img/tàu hủ.png">
+		tau hu sot chay</button></a>
+	  
+
+	  
+  </section>
+  <section id="place">
+    	<div onClick="function1()">
+	  <button class="b1">
+	  </button>
+	  <img class="p1" src="img/viet chay.png">
+	</div>
+	  	<div onClick="function2()">
+	  <button class="b2">
+	  </button>
+	  <img class="p2" src="img/san may.png">
+	</div>
+	  <button class="b3">
+	  </button>
+	  <img class="p3" src="img/chay garden.png">
+	  
+	  <button class="b4">
+	  </button>
+	  <img class="p4" src="img/vajra.png">
+	  
+	  <button class="b5">
+	  </button>
+	  <img class="p5" src="img/nha hang sen 1.png">
+	  
+	  <button class="b6">
+	  </button>
+	  <img class="p6" src="img/mang mania.png">
+	  
+  </section>
+  <section id="contact">
+	  
+	  
+	  
+    <div class="contop" >
+		<img src="img/LOGO WHITE-01.png">
+	   <h1>Tim chung toi</h1>
+	  </div>  
+	 
+	<div class="concent">
+	    <a href="#"><i class="fab fa-facebook" style="font-size:36px;"></i></a>
+	  <a href="#"><i class="fab fa-instagram" style="font-size:36px;"></i></a>
+	  <a href="#"><i class="fab fa-twitter" style="font-size:36px;"></i></a>
+	  </div>
+	  
+	<div class="conbot">
+	  <a href="#home">Ve dau trang</a>
+	  </div>
+	  
+  </section>
+</div>
+<!-- partial -->
+
+
+</body>
+</html>
